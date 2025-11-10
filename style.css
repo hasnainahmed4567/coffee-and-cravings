@@ -224,7 +224,7 @@ header .navbar{
     gap: 50px;
     align-items: center;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .about-section .about-image-wrapper .about-image{
     width: 400px;
@@ -756,4 +756,5 @@ body.show-mobile-menu header::before{
         gap: 20px;
     }
 }
+
 }
