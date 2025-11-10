@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Bar</title>
+    <!-- linking font awesome for icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- header / navbar -->
+    <header>
+        <nav class="navbar section-content">
+            <a href="" class="nav-logo">
+                <h2 class="logo-text">Coffee Bar</h2>
+            </a>
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                 <li class="nav-item">
+                    <a href="cart.html" class="nav-link">Cart</a>
+                </li>
+            </ul>
+             <button id="menu-open-button" class="fas fa-bars"></button>
+        </nav>
+    </header>
+
+    <!-- section 1 -->
+   <section class="menu-section" id="menu">
+            <h2 class="section-title">Our Menu</h2>
+            <hr>
+            <div class="section-content">
+        
+  <!-- item 1 -->
+                  <h2 class="section-title">Hot Beverages</h2>
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <img src="images/cappuccino.jpg" alt="Hot-Beverages" class="menu-image1">
+                        <h3 class="name">Cappuccino with Latte</h3>
+                        <p class="text">&#8594 Rs : 250 &#8592</p>
+                         <div class="btn1">
+                         <!-- <a href="cart.html" class="button order-now">Order Now</a> -->
+                           <button class="button order-now" onclick="addToCart('Cappuccino with Latte', 250 )">Order Now</button>
+                         </div>
+                         </li>
+                         
+<!-- item 2 -->
+                           <li class="menu-item">
+                        <img src="images/espresso coffee.jpg" alt="Hot-Beverages" class="menu-image1">
+                        <h3 class="name">Expresso Coffee</h3>
+                        <p class="text">&#8594 Rs : 150 &#8592</p>
+                        <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('Expresso Coffee',150   )">Order Now</button>
+                         </div>
+                         </li>
+<!-- item 3 -->
+                           <li class="menu-item">
+                        <img src="images/hot new.jpg" alt="Hot-Beverages" class="menu-image1">
+                        <h3 class="name">Hot Coffee</h3>
+                        <p class="text">&#8594 Rs : 350 &#8592</p>
+                           <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('Hot Coffee', 350 )">Order Now</button>
+                         </div>
+                         </li>
+                                
+  <!-- item 4 -->
+                    <li class="menu-item">
+                        <img src="images/black coffee.jpg" alt="Hot-Beverages" class="menu-image1">
+                        <h3 class="name">Black Coffee</h3>
+                        <p class="text">&#8594 Rs : 150 &#8592</p>
+                         <div class="btn1">
+                         <!-- <a href="cart.html" class="button order-now">Order Now</a> -->
+                           <button href="cart.html" class="button order-now" onclick="addToCart('Black Coffee', 150  )">Order Now</button>
+                         </div>
+                         </li>
+                         
+<!-- item 5 -->
+                           <li class="menu-item">
+                        <img src="images/tea.jpg" alt="Hot-Beverages" class="menu-image1">
+                        <h3 class="name">Tea</h3>
+                        <p class="text">&#8594 Rs : 100 &#8592</p>
+                        <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('Tea', 100  )">Order Now</button>
+                         </div>
+                         </li>
+<!-- item 6 -->
+                           <li class="menu-item">
+                        <img src="images/green tea.jpg" alt="Hot-Beverages" class="menu-image1">
+                        <h3 class="name">Green Tea</h3>
+                        <p class="text">&#8594 Rs : 350 &#8592</p>
+                           <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('Green Tea ', 350 )">Order Now</button>
+                         </div>
+                         </li>
+            </ul>
+            </div>
+  </section>
+      
+<hr>
+<!-- section 2 -->
+ <section class="menu-section" id="menu">
+            <div class="section-content">
+        
+  <!-- item 1 -->
+                  <h2 class="section-title">Cold  Beverages</h2>
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <img src="images/Coconut Mocha.jpg" alt="Cold-Beverages" class="menu-image1">
+                        <h3 class="name">Coconut Mocha</h3>
+                        <p class="text">&#8594 Rs : 450 &#8592</p>
+                         <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('Coconut Mocha', 450 )">Order Now</button>
+                         </div>
+                         </li>
+<!-- item 2 -->
+                           <li class="menu-item">
+                        <img src="images/Iced Caramel Macchiato.jpg" alt="cold-Beverages" class="menu-image1">
+                        <h3 class="name">Iced Caramel Macchiato</h3>
+                        <p class="text">&#8594 Rs : 650 &#8592</p>
+                         <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('Iced Caramel Macchiato', 650 )">Order Now</button>
+                         </div>
+                         </li>
+<!-- item 3 -->
+                           <li class="menu-item">
+                        <img src="images/boba tea.jpg" alt="cold-Beverages" class="menu-image1">
+                        <h3 class="name">Boba Tea</h3>
+                        <p class="text">&#8594 Rs : 550 &#8592</p>
+                          <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('Boba Tea', 550 )">Order Now</button>
+                         </div>
+                         </li>
+<!--item 4  -->
+                           <li class="menu-item">
+                        <img src="images/Iced Coffee with Condensed Milk.jpg" alt="Cold-Beverages" class="menu-image1">
+                        <h3 class="name">Iced Coffee with Condensed Milk</h3>
+                        <p class="text">&#8594 Rs : 850 &#8592</p>
+                         <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('Iced Coffee with Condensed Milk', 850 )">Order Now</button>
+                         </div>
+                         </li>
+<!-- item 5 -->
+                           <li class="menu-item">
+                        <img src="images/Oreo Iced Coffee.jpg" alt="cold-Beverages" class="menu-image1">
+                        <h3 class="name">Oreo Iced Coffee</h3>
+                        <p class="text">&#8594 Rs : 950 &#8592</p>
+                         <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('Oreo Iced Coffee', 950)">Order Now</button>
+                         </div>
+                         </li>
+<!-- item 6 -->
+                           <li class="menu-item">
+                        <img src="images/Caramel Hazelnut Iced Coffee.jpg" alt="cold-Beverages" class="menu-image1">
+                        <h3 class="name">Caramel Hazelnut Iced Coffee</h3>
+                        <p class="text">&#8594 Rs : 900 &#8592</p>
+                          <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('Caramel Hazelnut Iced Coffee', 900 )">Order Now</button>
+                         </div>
+                         </li>
+            </ul>
+            </div>
+  </section>
+      
+<hr>
+<!-- section 3 -->
+ <section class="menu-section" id="menu">
+            <div class="section-content">
+        
+  <!-- item 1 -->
+                  <h2 class="section-title">Refreshment</h2>
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <img src="images/fruit salad.jpg" alt="Refreshment" class="menu-image1">
+                        <h3 class="name">Fruit Salad</h3>
+                        <p class="text">&#8594 Rs : 700 &#8592</p>
+                          <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('Fruit Salad', 700 )">Order Now</button>
+                         </div>
+                         </li>
+ <!-- item 2 -->
+                           <li class="menu-item">
+                        <img src="images/strawberry lemonade.jpg" alt="Refreshment" class="menu-image1">
+                        <h3 class="name">Strawbeery Lemonade</h3>
+                        <p class="text">&#8594 Rs : 499 &#8592 </p>
+                           <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('Strawbeery Lemonade', 499 )">Order Now</button>
+                         </div>
+                         </li>
+<!-- item 3 -->
+                           <li class="menu-item">
+                        <img src="images/Sparkling blueberry soda.jpg" alt="Refreshment" class="menu-image1">
+                        <h3 class="name">Sparkling Blueberry Soda</h3>
+                        <p class="text">&#8594 Rs : 399 &#8592</p>
+                        <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('Sparkling Blueberry Soda', 399 )">Order Now</button>
+                         </div>
+                         </li>
+                                                 
+<!-- item 4 -->
+                           <li class="menu-item">
+                        <img src="images/Strawberry Watermelon Spritzer.jpg" alt="Refreshment" class="menu-image1">
+                        <h3 class="name">Strawberry  Spritzer</h3>
+                        <p class="text">&#8594 Rs : 499 &#8592</p>
+                        <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('Strawberry  Spritzer', 499 )">Order Now</button>
+                         </div>
+                         </li>
+                                                 
+<!-- item 5 -->
+                           <li class="menu-item">
+                        <img src="images/Mango Juice.jpg" alt="Refreshment" class="menu-image1">
+                        <h3 class="name">Mango Juice</h3>
+                        <p class="text">&#8594 Rs : 299 &#8592</p>
+                        <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('Mango Juice', 299 )">Order Now</button>
+                         </div>
+                         </li>
+                                                 
+<!-- item 6 -->
+                           <li class="menu-item">
+                        <img src="images/Mojito Mocktail.jpg" alt="Refreshment" class="menu-image1">
+                        <h3 class="name">Mojito Mocktail</h3>
+                        <p class="text">&#8594 Rs : 599 &#8592</p>
+                        <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('Mojito Mocktail', 599)">Order Now</button>
+                         </div>
+                         </li>
+            </ul>
+            </div>
+  </section>
+      
+<hr>
+
+<!-- section 4 -->
+ <section class="menu-section" id="menu">
+            <div class="section-content">
+        
+  <!-- item 1 -->
+                  <h2 class="section-title">Special</h2>
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <img src="images/Herb-Crusted Rack of Lamb.jpg" alt="special 1" class="menu-image1">
+                        <h3 class="name">Herb-Crusted Rack of Lamb</h3>
+                        <p class="text">&#8594 Rs : 1899 &#8592</p>
+                          <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('Herb-Crusted Rack of Lamb', 1899 )">Order Now</button>
+                         </div>
+                         </li>
+ <!-- item 2 -->
+                           <li class="menu-item">
+                        <img src="images/Gordon Ramsay Steak Marinade.jpg" alt="special 2" class="menu-image1">
+                        <h3 class="name">Gordon Ramsay Steak </h3>
+                        <p class="text">&#8594 Rs :  1999 &#8592 </p>
+                         <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('Gordon Ramsay Steak', 1999 )">Order Now</button>
+                         </div>
+                         </li>
+<!-- item 3 -->
+                           <li class="menu-item">
+                        <img src="images/Garlic Butter Lobster Tail.jpg" alt="special 3" class="menu-image1">
+                        <h3 class="name">Garlic Butter Lobster Tail</h3>
+                        <p class="text">&#8594 Rs : 1299  &#8592</p>
+                          <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('Garlic Butter Lobster Tail', 1299 )">Order Now</button>
+                         </div>
+                         </li>
+                                                  
+<!-- item 4 -->
+                           <li class="menu-item">
+                        <img src="images/sushi.jpg" alt="special 3" class="menu-image1">
+                        <h3 class="name">Sushi</h3>
+                        <p class="text">&#8594 Rs : 699  &#8592</p>
+                          <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('Sushi', 699 )">Order Now</button>
+                         </div>
+                         </li>
+<!-- item 5 -->
+                           <li class="menu-item">
+                        <img src="images/Seafood Pasta.jpg" alt="special 5" class="menu-image1">
+                        <h3 class="name">Seafood Pasta</h3>
+                        <p class="text">&#8594 Rs : 799  &#8592</p>
+                          <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('Seafood Pasta', 799 )">Order Now</button>
+                         </div>
+                         </li>
+
+
+<!-- item 6 -->
+                           <li class="menu-item">
+                        <img src="images/Hotpot.jpg" alt="special 6" class="menu-image1">
+                        <h3 class="name">Hotpot</h3>
+                        <p class="text">&#8594 Rs : 4999  &#8592</p>
+                          <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('Hotpot', 4999 )">Order Now</button>
+                         </div>
+                         </li>
+
+            </ul>
+            </div>
+  </section>
+      
+<hr>
+<!-- section 5 -->
+<section class="menu-section" id="menu">
+            <div class="section-content">
+        
+  <!-- item 1 -->
+                  <h2 class="section-title">Fast Food & Bar-B.Q</h2>
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <img src="images/zinger burger.jpg" alt=" fast food" class="menu-image1">
+                        <h3 class="name">Zinger Burger</h3>
+                        <p class="text">&#8594 Rs : 350 &#8592</p>
+                           <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('zinger Burger', 350 )">Order Now</button>
+                         </div>
+                         </li>
+ <!-- item 2 -->
+                           <li class="menu-item">
+                        <img src="images/chicken burger.jpg" alt="fast food" class="menu-image1">
+                        <h3 class="name">Chicken Burger</h3>
+                        <p class="text">&#8594 Rs : 250 &#8592 </p>
+                           <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart(' Chicken Burger', 250 )">Order Now</button>
+                         </div>
+                         </li>
+<!-- item 3 -->
+                           <li class="menu-item">
+                        <img src="images/fries.jpg" alt="fast food" class="menu-image1">
+                        <h3 class="name">Fries</h3>
+                        <p class="text">&#8594 Rs : 150  &#8592</p>
+                           <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('Fries', 150 )">Order Now</button>
+                         </div>
+                         </li>
+<!-- item 4 -->
+                        <li class="menu-item">
+                        <img src="images/chicken pieces.jpg" alt="fast food" class="menu-image1">
+                        <h3 class="name">Chicken Pieces</h3>
+                        <p class="text">&#8594 Rs : 600 &#8592</p>
+                           <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('Chicken Pieces', 600 )">Order Now</button>
+                         </div>
+                         </li>
+<!-- item 5 -->
+                         <li class="menu-item">
+                        <img src="images/malai boti.jpg" alt="fast food" class="menu-image1">
+                        <h3 class="name">Malai Boti</h3>
+                        <p class="text">&#8594 Rs : 550  &#8592</p>
+                           <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('Malai Boti', 550 )">Order Now</button>
+                         </div>
+                         </li>
+<!-- item 6 -->
+                         <li class="menu-item">
+                        <img src="images/beef kabab.jpg" alt="fast food" class="menu-image1">
+                        <h3 class="name">Beef Kabab</h3>
+                        <p class="text">&#8594 Rs : 400  &#8592</p>
+                           <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('Beef Kabab', 400 )">Order Now</button>
+                         </div>
+                         </li>
+                            
+<!-- item 7 -->
+                         <li class="menu-item">
+                        <img src="images/gola kabab.jpg" alt="fast food" class="menu-image1">
+                        <h3 class="name">Gola Kabab</h3>
+                        <p class="text">&#8594 Rs : 600  &#8592</p>
+                           <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('Gola Kabab', 600 )">Order Now</button>
+                         </div>
+                         </li>
+                           
+<!-- item 8 -->
+                         <li class="menu-item">
+                        <img src="images/white suace pasta.jpg" alt="fast food" class="menu-image1">
+                        <h3 class="name">White Sauce Pasta</h3>
+                        <p class="text">&#8594 Rs : 400  &#8592</p>
+                           <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('White Sauce Pasta', 400 )">Order Now</button>
+                         </div>
+                         </li>
+                                                    
+<!-- item 9 -->
+                         <li class="menu-item">
+                        <img src="images/california Spaghetti Salad.jpg" alt="fast food" class="menu-image1">
+                        <h3 class="name">california Spaghetti Salad</h3>
+                        <p class="text">&#8594 Rs : 350  &#8592</p>
+                           <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('california Spaghetti Salad', 350 )">Order Now</button>
+                         </div>
+                         </li>
+
+
+
+            </ul>
+            </div>
+  </section>
+      
+<hr>
+
+
+<!-- section 6 -->
+  <section class="menu-section" id="menu">
+            <div class="section-content">
+        
+  <!-- item 1 -->
+                  <h2 class="section-title">deserts</h2>
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <img src="images/oreo brownie trifle.jpg" alt="desert1" class="menu-image1">
+                        <h3 class="name">Oreo Brownie Trifle</h3>
+                        <p class="text">&#8594 Rs : 799 &#8592</p>
+                         <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('>Oreo Brownie Trifle', 799 )">Order Now</button>
+                         </div>
+                         </li>
+ <!-- item 2 -->
+                           <li class="menu-item">
+                        <img src="images/kunafa.jpg" alt="desert2" class="menu-image1">
+                        <h3 class="name">Kunafa</h3>
+                        <p class="text">&#8594 Rs : 499 &#8592 </p>
+                         <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('Kunafa',499 )">Order Now</button>
+                         </div>                                             
+                         </li>
+<!-- item 3 -->
+                           <li class="menu-item">
+                        <img src="images/nutella tiramisu.jpg" alt="desert3" class="menu-image1">
+                        <h3 class="name">Nutella Tiramisu</h3>
+                        <p class="text">&#8594 Rs : 899 &#8592</p>
+                         <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('Nutella Tiramisu', 899 )">Order Now</button>
+                         </div>                                             
+                         </li>
+                              
+  <!-- item 4 -->
+                    <li class="menu-item">
+                        <img src="images/Caramel Brownie Cheesecake.jpg" alt="desert1" class="menu-image1">
+                        <h3 class="name">Caramel Brownie Cheesecake</h3>
+                        <p class="text">&#8594 Rs : 1199 &#8592</p>
+                         <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('Caramel Brownie Cheesecake', 1199)">Order Now</button>
+                         </div>
+                         </li>
+ <!-- item 5 -->
+                           <li class="menu-item">
+                        <img src="images/Chocolate Chip Cookie Cake.jpg" alt="desert2" class="menu-image1">
+                        <h3 class="name">Chocolate Chip Cookie Cake</h3>
+                        <p class="text">&#8594 Rs : 1399 &#8592 </p>
+                         <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('Chocolate Chip Cookie Cake', 1399 )">Order Now</button>
+                         </div>                                             
+                         </li>
+<!-- item 6 -->
+                           <li class="menu-item">
+                        <img src="images/Strawberry Cream Puffs.jpg" alt="desert3" class="menu-image1">
+                        <h3 class="name">Strawberry Cream Puffs</h3>
+                        <p class="text">&#8594 Rs : 999 &#8592</p>
+                         <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('Strawberry Cream Puffs', 999 )">Order Now</button>
+                         </div>                                             
+                         </li>
+                  </ul>
+            </div>
+  </section>
+      
+<hr>
+
+
+<!-- section 7 -->
+  <section class="menu-section" id="menu">
+            <div class="section-content">
+        
+  <!-- item 1 -->
+                  <h2 class="section-title">Drinks</h2>
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <img src="images/Strawberry Shake.jpg" alt="drink1" class="menu-image1">
+                        <h3 class="name">Strawberry Shake</h3>
+                        <p class="text">&#8594 Rs : 299 &#8592</p>
+                         <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('Strawberry Shake', 299 )">Order Now</button>
+                         </div>
+                         </li>
+ <!-- item 2 -->
+                           <li class="menu-item">
+                        <img src="images/Watermelon Slushie.jpg" alt="drink2" class="menu-image1">
+                        <h3 class="name">Watermelon Slushie</h3>
+                        <p class="text">&#8594 Rs : 399  &#8592 </p>
+                         <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('Watermelon Slushie', 399 )">Order Now</button>
+                         </div>                                             
+                         </li>
+<!-- item 3 -->
+                           <li class="menu-item">
+                        <img src="images/Frozen Mixed Berry Smoothie.jpg" alt="drink3" class="menu-image1">
+                        <h3 class="name">Frozen Mixed Berry Smoothie</h3>
+                        <p class="text">&#8594 Rs : 499 &#8592</p>
+                         <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('Frozen Mixed Berry Smoothie', 499 )">Order Now</button>
+                         </div>                                             
+                         </li>
+                              
+  <!-- item 4 -->
+                    <li class="menu-item">
+                        <img src="images/Banana Vanilla Smoothie.jpg" alt="drink4" class="menu-image1">
+                        <h3 class="name">Banana Vanilla Smoothie</h3>
+                        <p class="text">&#8594 Rs : 299  &#8592</p>
+                         <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('Banana Vanilla Smoothie', 299 )">Order Now</button>
+                         </div>
+                         </li>
+ <!-- item 5 -->
+                           <li class="menu-item">
+                        <img src="images/Chocolate Smoothie.jpg" alt="drink5" class="menu-image1">
+                        <h3 class="name">Chocolate Smoothie</h3>
+                        <p class="text">&#8594 Rs : 250 &#8592 </p>
+                         <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('Chocolate Smoothie', 250 )">Order Now</button>
+                         </div>                                             
+                         </li>
+<!-- item 6 -->
+                           <li class="menu-item">
+                        <img src="images/Kiwi mocktail.jpg" alt="drink6" class="menu-image1">
+                        <h3 class="name">Kiwi Mocktail</h3>
+                        <p class="text">&#8594 Rs : 499 &#8592</p>
+                         <div class="btn1">
+                         <button href="cart.html" class="button order-now" onclick="addToCart('Kiwi Mocktail', 499 )">Order Now</button>
+                         </div>                                             
+                         </li>
+                </ul>
+            </div>
+  </section>
+                        
+
+
+<!-- footer -->
+<footer class="footer-section">
+  <div class="section-content">
+    <p class="copyright-text">© 2025 Coffee & Cravings</p>
+
+    <div class="social-link-list">
+      <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+
+    <p class="policy-text">
+      <a href="#" class="policy-link">Privacy policy</a>
+      <span class="separator">*</span>
+      <a href="#" class="policy-link">Refund policy</a>
+    </p>
+  </div>
+</footer>
+
+
+
+</body>
+
+<script src="script.js"></script>
+</html>
