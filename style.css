@@ -172,7 +172,6 @@ header .navbar{
 }
 /* about section styling */
 .about-section{
-    height: 910px;
     padding: 120px 0;
     background: var(--light-pink-color);
 }
@@ -709,4 +708,5 @@ body.show-mobile-menu header::before{
         gap: 20px;
     }
 }
+
 }
